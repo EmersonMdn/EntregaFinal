@@ -79,4 +79,39 @@ body {
   transform: scale(0.95);
 }
 
+.form-login {
+  display: flex !important;
+  justify-content: space-around;
+}
+
+.items_index {
+  background-color: rgba(182, 68, 68, 0.342);
+  display: flex;
+  justify-content: space-around;
+}
+
+.eventos_item {
+  background-color: rgba(99, 98, 98, 0.459);
+  padding: 16px;
+  width: 24rem;
+  margin: 1%;
+}
+.eventos_item .img_items {
+  height: 350px;
+}
+
+.eventos_item:hover {
+  box-shadow: 0 0 20px;
+}
+
+.contenido {
+  margin-left: 9%;
+}
+
+.compra-btn {
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=estilos.css.map */
