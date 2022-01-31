@@ -13,6 +13,11 @@ $color_amarillo:#ffc400;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $color_oscuro;
     height: 100vh;
@@ -47,9 +52,11 @@ body {
     background-size: cover;
     background-position: center;
 }
-.btn-submit{
-    margin:0px 0 0 0px;
+
+.btn-submit {
+    margin: 0px 0 0 0px;
 }
+
 .busqueda button {
     cursor: pointer;
     font-weight: 700;
@@ -79,35 +86,60 @@ body {
     transform: scale(0.95);
 }
 
-.form-login{
+.form-login {
     display: flex !important;
     justify-content: space-around;
 }
 
-.items_index{
-    background-color: rgba(182, 68, 68, 0.342);
+.items_index {
+    background-color: rgba(78, 75, 75, 0.342);
     display: flex;
     justify-content: space-around;
 }
-.eventos_item{
-    background-color:  rgba(99, 98, 98, 0.459);
+
+.eventos_item {
     padding: 16px;
     width: 24rem;
     margin: 1%;
 
-    .img_items{
-    height: 350px;
+    .img_items {
+        height: 350px;
     }
 }
-.eventos_item:hover{
+
+.eventos_item:hover {
     box-shadow: 0 0 20px;
 }
-.contenido{
-    margin-left:9% ;
+
+.contenido {
+    margin-left: 5%;
 }
-.compra-btn{
+
+.compra-btn {
     width: 100%;
     padding: 15px 0;
     margin-top: 10px;
 }
 
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    font-size: 13px;
+    line-height: 30px;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    .redes {
+        li {
+            display: inline-block;
+            padding-left: 20px;
+            font-size: 30px;
+        }
+    }
+}

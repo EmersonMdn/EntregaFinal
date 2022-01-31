@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Roboto:wght@100&family=Work+Sans:wght@100&display=swap");
+/*
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.h1-login{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#form{
+    align-items: center;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.479);   
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 40px 0;
+    
+}
+.form-login{
+    width: 100%;
+}
+.grupo{
+    position: relative;
+    margin: 10px 0 25px 0;
+    
+}
+input{
+    background-color:none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    padding:10px 0 10px 0;
+    
+}
+input:focus{
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+label{
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -19px;
+    font-size: 14px;
+    color: rgb(255, 189, 6);
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgba(255, 166, 0, 0.993), rgb(215, 252, 3));
+    transition: 0.3s ease width;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+.btn-login{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+}
