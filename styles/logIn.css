@@ -17,6 +17,7 @@ html {
     
 }
 main{
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,39 +30,36 @@ main{
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
-#form{
-    align-items: center;
-    width: 400px;
+#formulario{
     background-color: rgba(255, 255, 255, 0.479);   
     padding: 1rem;
+    align-items: center;
     border-radius: 10px;
-    margin: 40px 0;
-    
 }
-.form-login{
+.formulario-login{
     width: 100%;
+    margin: auto;
 }
 .grupo{
     position: relative;
-    margin: 10px 0 25px 0;
-    
+    margin:34px 0;   
 }
 #name{
     background-color:none;
-    color: rgb(0, 0, 0);
+    color: rgb(88, 87, 88);
     font-size: 18px;
-    padding: 10px 0 10px 0;
+    padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
     border: none;
+    border-bottom: 1px solid;
     padding:10px 0 10px 0;
-    
 }
-input:focus{
+#name:focus{
     outline: none;
     color: rgb(0, 0, 0);
 }
-.grupo label{
+.grupo .label{
     color: black;
     font-size: 16px;
     position: absolute;
@@ -71,8 +69,8 @@ input:focus{
     pointer-events: none;
 }
 
-input:focus~.label,
-input:valid~.label{
+#name:focus~.label,
+#name:valid~.label{
     top: -19px;
     font-size: 14px;
     color: rgb(255, 189, 6);
@@ -89,7 +87,7 @@ input:valid~.label{
     bottom: 0;
     position: absolute;
     background: linear-gradient(to right, rgba(233, 151, 0, 0.993), rgb(240, 223, 131));
-    transition: 0.3s ease width;
+    transition: 0.8s ease width;
 }
 
 input:focus~.barra::before{
@@ -101,17 +99,20 @@ input:focus~.barra::before{
     border-radius: 10px;
 }
 .form-check-input{
-    margin: .3rem 0 0 0;
+    margin: 10px 0 0 -17px;
     position:relative;
 }
-.form-login a{
+.formulario-login a{
     color:rgb(233, 152, 2) ;
     text-decoration: none;
 }
-.form-login p{
+.formulario-login p{
     color: rgb(116, 91, 53);
 }
-.form-group{
-    text-align: left;
-    padding: 0;
+
+
+
+.input__login{
+    background-color:none;
+    width: 100%;
 }

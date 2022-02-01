@@ -55,15 +55,16 @@
     </header>
 
     <main>
-        <form id="form">
-            <div class="form-login">
+        
+        <form method="post" id="formulario">
+            <div class="formulario-login">
                 <h1 class="h1-login">Iniciar sesion</h1>
                 <div class="grupo">
-                    <input type="email" id="name" required> <span class="barra"></span>
+                    <input type="email" id="name" class="input__login" required><span class="barra"></span>
                     <label class="label" for="">Correo electronico</label>
                 </div>
                 <div class="grupo">
-                    <input type="password" id="name" required> <span class="barra"></span>
+                    <input type="password" id="name" class="input__login" required> <span class="barra"></span>
                     <label class="label" for="">Contraseña</label>
                 </div>
                 <button type="submit" class="btn-warning btn-login">Entrar</button>
@@ -74,6 +75,10 @@
                   <p>¿No recuerda su contraseña? <a href="#">Pulse aquí</a></p>
                 
         </form>
+
+
+
+
     </main>
     <footer class="footer container-fluid bg-dark">
         <div class="row">
