@@ -83,6 +83,11 @@ body {
   transform: scale(0.95);
 }
 
+.form-login {
+  display: flex !important;
+  justify-content: space-around;
+}
+
 .items_index {
   background-color: rgba(78, 75, 75, 0.342);
   display: flex;
@@ -100,6 +105,7 @@ body {
 
 .eventos_item:hover {
   box-shadow: 0 0 20px;
+  transition: 0.5s;
 }
 
 .contenido {
@@ -128,6 +134,16 @@ body {
   display: inline-block;
   padding-left: 20px;
   font-size: 30px;
+}
+
+.footer a:hover {
+  transition: 0.2s;
+  border: 1px;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: #ffc400;
+  color: #000;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=estilos.css.map */
