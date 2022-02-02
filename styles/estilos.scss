@@ -31,7 +31,6 @@ body {
 .navbar {
     padding: 10px 30px 10px 50px;
 }
-
 .btn-outline-success {
     color: #9e9e9e;
     border-color: #ffffff00 !important;
@@ -119,6 +118,26 @@ body {
     width: 100%;
     padding: 15px 0;
     margin-top: 10px;
+    border-radius: 10px;
+}
+.compra-btn:hover{
+    background-color: rgb(247, 65, 95);
+    border: none;
+    color: azure;
+}
+.verMas{
+    display: flex;
+    justify-content: center;
+   button{
+    background-color: $color_amarillo;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+   }
 }
 
 .footer {

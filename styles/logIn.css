@@ -25,6 +25,12 @@ main{
     background-size:cover;
     background-position: center;
 }
+header{
+    position: fixed !important;
+    z-index: 1;
+    width: 100%;
+
+}
 .h1-login{
     text-align: center;
     font-weight: 700;
@@ -53,6 +59,7 @@ main{
     width: 100%;
     border: none;
     border-bottom: 1px solid;
+    border-radius: 7px;
     padding:10px 0 10px 0;
 }
 #name:focus{

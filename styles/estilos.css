@@ -115,6 +115,28 @@ body {
   width: 100%;
   padding: 15px 0;
   margin-top: 10px;
+  border-radius: 10px;
+}
+
+.compra-btn:hover {
+  background-color: #f7415f;
+  border: none;
+  color: azure;
+}
+
+.verMas {
+  display: flex;
+  justify-content: center;
+}
+.verMas button {
+  background-color: #ffc400;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.verMas button a {
+  text-decoration: none;
+  color: black;
 }
 
 .footer {
