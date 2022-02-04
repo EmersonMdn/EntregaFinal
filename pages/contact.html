@@ -11,7 +11,7 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/estilos.css" />
-    <link rel="stylesheet" href="../styles/logIn.css" />
+    <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Iniciar sesión | TicketsOn</title>
 </head>
@@ -54,33 +54,65 @@
         </nav>
     </header>
 
-    <main class="main-login">
-        
-        <form method="post" id="formulario">
-            <div class="formulario-login">
-                <h1 class="h1-login">Iniciar sesion</h1>
-                <div class="grupo">
-                    <input type="email" id="name" class="input__login" required><span class="barra"></span>
-                    <label class="label" for="">Correo electronico</label>
+    <main>
+        <div class="container contact animate__animated animate__bounceInLeft">
+            <div class="head ">
+                <h1>¡Contactate con nosotros!</h1>
+                <p>Dejanos tu mensaje y te contestamos a la brevedad</p>  
+            </div>     
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Nombre</label>
+                            <input type="text" class="form-control" id="inputEmail4"><span class="barra"></span>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="">Telefono</label>
+                            <input type="text" class="form-control" id=""><span class="barra"></span>
+                          </div>
+                        </div>
+                       
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="">Asunto</label>
+                            <input type="text" class="form-control" id=""><span class="barra"></span>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">Provincia</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Elija...</option>
+                              <option>CABA</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip"><span class="barra"></span>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="validationTextarea">Mensaje</label>
+                            <textarea class="form-control mensaje" id="validationTextarea" placeholder="Escriba su mensaje..." required></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-light">Enviar</button>
+                    </form>
                 </div>
-                <div class="grupo">
-                    <input type="password" id="name" class="input__login" required> <span class="barra"></span>
-                    <label class="label" for="">Contraseña</label>
+                <div class="col-md-6 col-xs-12">
+                    <h2>¡Nuestra ubicación!</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.7750739062517!2d-58.36848868220801!3d-34.60236133743749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335325f19f9a3%3A0xfd34b93fba734a98!2sLuna%20Park!5e0!3m2!1ses-419!2sar!4v1643957329625!5m2!1ses-419!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <p class="h4">Pasa a visitarnos cuando quieras</p>
+                        <small>Lunes a viernes de 10hs a 19hs</small> <br>
+                        <small>Sabados de 12hs a 17hs</small>
                 </div>
-                <button type="submit" class="btn-warning btn-login">Entrar</button>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Mantener sesion abierta </label>
-                  </div>
-                  <p>¿No recuerda su contraseña? <a href="#">Pulse aquí</a></p>
-                  <p><a class="register" href="./register.html">¿Aún no posee cuenta?</a></p>
-                
-        </form>
-
-
-
-
+            </div>
+        </div>
     </main>
+
+
+
     <footer class="footer container-fluid bg-dark">
         <div class="row">
             <div class="col-sm-4 col-md-3 text-white f-a">
@@ -88,13 +120,13 @@
                     <li>
                         <a href="../index.html"> <i class="fas fa-home"></i> Inicio</a>
                     </li>
-                    <li><a href="#">Eventos</a></li>
+                    <li><a href="./eventos.html">Eventos</a></li>
                 </ul>
             </div>
             <div class="col-sm-4 col-md-3 text-white f-a">
                 <ul>
-                    <li><a href="./pages/logIn.html">Iniciar sesion</a></li>
-                    <li><a href="./pages/register.html">Registro</a></li>
+                    <li><a href="./logIn.html">Iniciar sesion</a></li>
+                    <li><a href="./register.html">Registro</a></li>
                     <li><a href="#">¿Olvidó su contraseña?</a></li>
                 </ul>
             </div>
@@ -121,9 +153,10 @@
                 </div>
             </div>
         </div>
-        <small class="text-white">Importante: TicketsOn no se hace responsable de la calidad o satisfacción de los eventos publicados. TicketsOn es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 TicketsOn. </small>
+        <small class="text-white">Importante: TicketsOn no se hace responsable de la calidad o satisfacción de los
+            eventos publicados. TicketsOn es un sistema que presta el servicio de venta de entradas online. Al usar este
+            sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 TicketsOn. </small>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -133,7 +166,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>

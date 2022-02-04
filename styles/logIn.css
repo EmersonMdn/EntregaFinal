@@ -16,7 +16,7 @@ html {
     scroll-behavior: smooth;
     
 }
-main{
+.main-login{
     height: 650px;
     display: flex;
     justify-content: center;
@@ -122,4 +122,8 @@ input:focus~.barra::before{
 .input__login{
     background-color:none;
     width: 100%;
+}
+.register{
+    color: rgb(246, 92, 92) !important;
+    font-weight: 600;
 }

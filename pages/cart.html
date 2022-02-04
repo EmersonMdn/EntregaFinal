@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,9 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/estilos.css" />
-    <link rel="stylesheet" href="../styles/logIn.css" />
+    <link rel="stylesheet" href="../styles/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Iniciar sesión | TicketsOn</title>
+    <title>Comprar ticket</title>
 </head>
 
 <body>
@@ -54,32 +54,81 @@
         </nav>
     </header>
 
-    <main class="main-login">
-        
-        <form method="post" id="formulario">
-            <div class="formulario-login">
-                <h1 class="h1-login">Iniciar sesion</h1>
-                <div class="grupo">
-                    <input type="email" id="name" class="input__login" required><span class="barra"></span>
-                    <label class="label" for="">Correo electronico</label>
+    <main>
+        <div class="container main">
+            <h1>Carro de compras</h1>
+            <hr class="my-4">
+            <p class="text-danger">No hay dias disponibles para esta función</p>
+            <div class="details">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr class="tr_1r">
+                            <th scope="col" class="tr1">Descripcion </th>
+                            <th scope="col" class="tr2">Valor</th>
+                            <th scope="col" class="tr3">Cantidad</th>
+                        </tr>
+                        <tr class="tr_2r">
+                            <td>
+                                <div>Entrada general <br>
+                                <small>Este ingreso representa la reserva, el resto será abonado en puerta el día del evento</small>
+                                </div>
+                            </td>
+                            <td> $700</td>
+                            <td>
+                                <select name="cantidad[]">
+                                    <option value="0|308779">0</option>
+                                    <option value="1|308779">1</option>
+                                    <option value="2|308779">2</option>
+                                    <option value="3|308779">3</option>
+                                    <option value="4|308779">4</option>
+                                    <option value="5|308779">5</option>
+                                    <option value="6|308779">6</option>
+                                    <option value="7|308779">7</option>
+                                    <option value="8|308779">8</option>
+                                    <option value="9|308779">9</option>
+                                    <option value="10|308779">10</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="tr_3r">
+                            <td>
+                                <div>Cupon de descuento</div>
+                            </td>
+                            <td colspan="1"></td>
+                            <td>
+                                <input type="text" id="name" class="input__login" required><span class="barra"></span>
+                                <label class="label" for=""></label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>TOTAL A PAGAR</td>
+                            <td colspan="1"></td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr class="tr_4r">
+                            <td colspan="2" ></td>
+                            <td>
+                                <input type="button" class="btn btn-warning animate__flash animate__animated animate__infinite animate__slower" value="ADQUIRIR">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="metodos">
+                    <h4>Metodos de pago</h4>
+                    <ul>
+                        <li>-<i class="icon fab fa-cc-visa"></i> Targetas de credito/debito</li>
+                        <li>-<i class="icon fab fa-google-pay"></i>Mercado Pago (hasta 12 cuotas  sin interés)</li>
+                        <li>-<i class="icon fas fa-money-bill-wave"></i>Efectivo (RapiPago, Pago Facil, etc...)</li>
+                    </ul>
                 </div>
-                <div class="grupo">
-                    <input type="password" id="name" class="input__login" required> <span class="barra"></span>
-                    <label class="label" for="">Contraseña</label>
-                </div>
-                <button type="submit" class="btn-warning btn-login">Entrar</button>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Mantener sesion abierta </label>
-                  </div>
-                  <p>¿No recuerda su contraseña? <a href="#">Pulse aquí</a></p>
-                  <p><a class="register" href="./register.html">¿Aún no posee cuenta?</a></p>
                 
-        </form>
+                <h5 class="text-danger"> Evento exclusivo para mayores de 18 años</h5>
+                <p>⚠️Deben presentarse con pase sanitario sin excepción⚠️</p>
+                <small>Los comentarios y/o textos ingresados son de exclusiva responsabilidad del Productor y/o Organizador del Evento. TicketsOn no se hace responsable por declaraciones emitidas por estos en lo relativo a los Eventos. El Productor/Organizador es el único y exclusivo responsable de la producción y organización del Evento, en forma oportuna y en conformidad a la ley. </small>
+            </div>
 
-
-
-
+        </div>
     </main>
     <footer class="footer container-fluid bg-dark">
         <div class="row">
@@ -88,18 +137,19 @@
                     <li>
                         <a href="../index.html"> <i class="fas fa-home"></i> Inicio</a>
                     </li>
-                    <li><a href="#">Eventos</a></li>
+                    <li><a href="./eventos.html">Eventos</a></li>
                 </ul>
             </div>
             <div class="col-sm-4 col-md-3 text-white f-a">
                 <ul>
-                    <li><a href="./pages/logIn.html">Iniciar sesion</a></li>
-                    <li><a href="./pages/register.html">Registro</a></li>
+                    <li><a href="./logIn.html">Iniciar sesion</a></li>
+                    <li><a href="./register.html">Registro</a></li>
                     <li><a href="#">¿Olvidó su contraseña?</a></li>
                 </ul>
             </div>
             <div class="col-sm-4 col-md-3 text-white f-a">
                 <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
                     <li><a href="./contact.html">Contacto</a></li>
                     <li><a href="#">RRHH</a></li>
                 </ul>
@@ -121,7 +171,9 @@
                 </div>
             </div>
         </div>
-        <small class="text-white">Importante: TicketsOn no se hace responsable de la calidad o satisfacción de los eventos publicados. TicketsOn es un sistema que presta el servicio de venta de entradas online. Al usar este sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 TicketsOn. </small>
+        <small class="text-white">Importante: TicketsOn no se hace responsable de la calidad o satisfacción de los
+            eventos publicados. TicketsOn es un sistema que presta el servicio de venta de entradas online. Al usar este
+            sitio usted acepta los términos y condiciones de la aplicación. Copyright © 2022 TicketsOn. </small>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
