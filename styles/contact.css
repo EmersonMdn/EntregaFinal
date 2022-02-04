@@ -10,12 +10,11 @@
     box-sizing: border-box;
 }
 main{
-    background-image:linear-gradient(to right,rgba(8, 8, 8, 0.904),rgba(255, 94, 0, 0.63),rgba(0, 0, 0, 0.904)), url("../img/c-d-x-PDX_a_82obo-unsplash.jpg");
-    background-position: center;
+    background-image:linear-gradient(to right,rgba(8, 8, 8, 0.904),rgba(255, 99, 9, 0.356),rgba(0, 0, 0, 0.904)),url("../img/fondo-Cont.jpg");
     background-size: cover;
+    background-position: center;
 }
 .contact{
-    background-color: rgba(0, 0, 0, 0);
     padding: 50px 10px 10px 10px ;
     color: rgb(229, 255, 0);
 }

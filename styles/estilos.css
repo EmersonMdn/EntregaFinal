@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-bottom: 50px;
+}
+
 body {
   background-color: #4e4e4e;
   height: 100vh;
@@ -89,22 +93,71 @@ body {
 }
 
 .items_index {
-  background-color: rgba(78, 75, 75, 0.342);
+  background-color: rgba(68, 67, 67, 0.767);
   display: flex;
-  justify-content: space-around;
+}
+
+.ultimas {
+  display: flex;
+  justify-content: center;
+}
+
+.eventos_ultimas {
+  padding: 16px;
+  width: 19rem;
+}
+.eventos_ultimas .img_items {
+  max-height: 350px;
+  max-width: 100%;
+}
+.eventos_ultimas a {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  padding: 5% 3%;
+  margin-top: 10px;
+  background-color: #ffc400;
+}
+
+.eventos_ultimas a:hover {
+  color: bisque;
+  background: #fb593c;
+  border: solid 2px;
+  transition: 0.3s;
+}
+
+.section1 {
+  background-image: url("../img/business-card-1082665.png");
+  background-position: top;
+  background-size: cover;
+}
+
+.section2 {
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0.123), orange, rgba(255, 0, 0, 0.123));
+}
+
+.ult-h1 {
+  color: #f1f1f1;
+  padding: 3%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 
 .eventos_item {
   padding: 16px;
-  width: 24rem;
+  width: 23rem;
 }
 .eventos_item .img_items {
-  height: 350px;
+  max-height: 350px;
+  max-width: 100%;
 }
 .eventos_item a {
+  width: 100%;
   color: black;
   text-decoration: none;
   padding: 5% 30%;
+  margin-top: 10px;
+  background-color: #ffc400;
 }
 
 .eventos_item:hover {
@@ -114,10 +167,13 @@ body {
 
 .eventos_item a:hover {
   color: bisque;
+  background: #fb593c;
+  border: solid 2px;
+  transition: 0.3s;
 }
 
 .contenido {
-  margin-left: 5%;
+  margin: 0 5%;
 }
 
 .compra-btn {
@@ -141,6 +197,7 @@ body {
   background-color: #ffc400;
   border: none;
   border-radius: 10px;
+  margin-top: 1%;
   padding: 10px;
 }
 .verMas button a {
@@ -149,7 +206,6 @@ body {
 }
 
 .footer {
-  margin-top: 50px;
   padding-top: 20px;
   font-size: 13px;
   line-height: 30px;
@@ -178,6 +234,18 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 560px) {
+  .eventos_ultimas {
+    padding: 16px;
+    width: 70%;
+    margin: 1% 10%;
+    background-color: rgba(163, 162, 162, 0.39);
+    border: thick 1px;
+  }
+  .eventos_ultimas .img_items {
+    max-width: 100%;
+    height: auto;
+  }
+
   .eventos_item {
     padding: 16px;
     width: 70%;
@@ -191,6 +259,18 @@ body {
   }
 }
 @media screen and (min-width: 560px) and (max-width: 854px) {
+  .eventos_ultimas {
+    padding: 10px 16px;
+    margin: 5px;
+    width: 40%;
+    background-color: rgba(163, 162, 162, 0.39);
+    border: thick 1px;
+  }
+  .eventos_ultimas .img_items {
+    max-width: 100%;
+    height: auto;
+  }
+
   .eventos_item {
     padding: 10px 16px;
     margin: 5px;
@@ -201,6 +281,10 @@ body {
   .eventos_item .img_items {
     max-width: 100%;
     height: auto;
+  }
+
+  .contenido {
+    margin: 0 10%;
   }
 }
 
