@@ -109,6 +109,9 @@ body {
         max-height: 350px;
         max-width: 100%;
     }
+    .btn-agotado{
+        background-color: rgb(173, 170, 170);
+    }
     a{
         width: 100%;
         color: rgb(0, 0, 0);
@@ -128,6 +131,7 @@ body {
     background-image: url("../img/business-card-1082665.png");
     background-position:top;
     background-size: cover;
+    background-position-y:-67px ;
 }
 .section2{
     background-image: linear-gradient(to left,rgba(255, 0, 0, 0.123),orange,rgba(255, 0, 0, 0.123));
@@ -147,13 +151,16 @@ body {
         max-height: 350px;
         max-width: 100%;
     }
+    .btn-agotado{
+        background-color: rgb(173, 170, 170);
+    }
     a{
         width: 100%;
-        color: rgb(0, 0, 0);
+        color: #000;
         text-decoration: none;
         padding: 5% 30%;
-        margin-top: 10px;
         background-color:$color_amarillo;
+        margin: 0;
     }
 }
 
@@ -170,6 +177,7 @@ body {
 
 .contenido {
     margin:0 5%;
+    justify-content: center;
 }
 
 .compra-btn {
@@ -186,19 +194,22 @@ body {
 .verMas{
     display: flex;
     justify-content: center;
-   button{
-    background-color: $color_amarillo;
-    border: none;
-    border-radius: 10px;
-    margin-top: 1%;
-    padding: 10px;
     a{
         text-decoration: none;
         color: rgb(0, 0, 0);
+        background-color:$color_amarillo;
+        padding: 1% 2%;
+        margin: 3% 0;
+        border-radius: 6px;
     }
-   }
 }
-
+.verMas a:hover{
+    background-color:rgb(247, 65, 95);
+    color: wheat;
+}
+.aviso_shows{
+    padding: 50px 0;
+}
 .footer {
     padding-top: 20px;
     font-size: 13px;

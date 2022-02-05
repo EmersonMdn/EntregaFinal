@@ -110,6 +110,9 @@ body {
   max-height: 350px;
   max-width: 100%;
 }
+.eventos_ultimas .btn-agotado {
+  background-color: #adaaaa;
+}
 .eventos_ultimas a {
   width: 100%;
   color: black;
@@ -130,6 +133,7 @@ body {
   background-image: url("../img/business-card-1082665.png");
   background-position: top;
   background-size: cover;
+  background-position-y: -67px;
 }
 
 .section2 {
@@ -151,13 +155,16 @@ body {
   max-height: 350px;
   max-width: 100%;
 }
+.eventos_item .btn-agotado {
+  background-color: #adaaaa;
+}
 .eventos_item a {
   width: 100%;
-  color: black;
+  color: #000;
   text-decoration: none;
   padding: 5% 30%;
-  margin-top: 10px;
   background-color: #ffc400;
+  margin: 0;
 }
 
 .eventos_item:hover {
@@ -174,6 +181,7 @@ body {
 
 .contenido {
   margin: 0 5%;
+  justify-content: center;
 }
 
 .compra-btn {
@@ -193,16 +201,22 @@ body {
   display: flex;
   justify-content: center;
 }
-.verMas button {
-  background-color: #ffc400;
-  border: none;
-  border-radius: 10px;
-  margin-top: 1%;
-  padding: 10px;
-}
-.verMas button a {
+.verMas a {
   text-decoration: none;
   color: black;
+  background-color: #ffc400;
+  padding: 1% 2%;
+  margin: 3% 0;
+  border-radius: 6px;
+}
+
+.verMas a:hover {
+  background-color: #f7415f;
+  color: wheat;
+}
+
+.aviso_shows {
+  padding: 50px 0;
 }
 
 .footer {
